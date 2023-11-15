@@ -4,4 +4,5 @@ on crée la reponse qui va faire la requetes à l'url passer en paramètre pour 
 si la réponse est valide on recois le code 200 et on va pouvoir crée un objet de la classe beautifulsoup qui va prendre la réponse pour l'analyser (parser)
 on crée une liste "paragraphs" qui va récupérer tout les paragraphes du site
 les deux ligne suivante vont ouvrir un fichier json en mode écriture pour pouvoir y mettre tout les paragraphes du site web dedans
-Et pour finir on dit a l'utilisateur que les données on bien été sauvegarder
+Et pour finir on dit a l'utilisateur que les données on bien été sauvegarder ou non
+Et en fin de page on peut modifier le url to scrape pour changer de site que l'on veut scrape et dessous changer le nom du fichier json

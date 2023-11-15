@@ -12,7 +12,7 @@ def scrape_and_save(url, output_file):
         soup = BeautifulSoup(response.text, 'html.parser')
 
         # Extraire le texte de toutes les balises <p>
-        paragraphs = [paragraph.get_text() for paragraph in soup.find_all()]
+        paragraphs = [paragraph.get_text() for paragraph in soup.find_all('p')]
 
         # Enregistrer les données dans un fichier JSON
         with open(output_file, 'w', encoding='utf-8') as json_file:
@@ -51,7 +51,7 @@ def create_summary_file(file1, file2, file3, output_file):
         data3 = set(json.load(json_file3))
 
     # Trouver les données similaires
-    common_data = list(data1.intersection(data2).intersection(data3) and data2.intersection(data3))
+    common_data = list(data1.intersection(data2).intersection(data3))
 
     # Enregistrer les données similaires dans un fichier JSON
     with open(output_file, 'w', encoding='utf-8') as json_file:

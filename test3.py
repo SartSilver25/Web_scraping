@@ -54,7 +54,7 @@ def create_summary_file(file1, file2, output_file):
     print(f"Données similaires enregistrées dans {output_file}")
 
 # URLs des pages à scraper
-urls_to_scrape = ['https://www.20minutes.fr/', 'https://www.lemonde.fr']
+urls_to_scrape = ['https://www.20minutes.fr/', 'https://www.20minutes.fr/']
 
 # Noms des fichiers JSON de sortie
 output_json_file1 = '20minutes.json'
